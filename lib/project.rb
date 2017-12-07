@@ -8,5 +8,6 @@ class Project
 
   def backers (backer)
     @backers << backer
+  end
 
 end
