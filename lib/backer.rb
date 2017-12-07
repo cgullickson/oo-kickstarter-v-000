@@ -7,8 +7,9 @@ class Backer
     @name = name
   end
 
-  def back_project(Project)
-    @@backed_projects << Project
-  end  
+  def back_project(project)
+    new_project = Project.new(project)
+    @@backed_projects << new_project
+  end
 
 end
